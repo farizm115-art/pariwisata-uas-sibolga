@@ -1,0 +1,243 @@
+<html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snorkeling Sibolga & Pulau Mursala</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1544551763-46a013bb70d5");
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-weight: bold;
+        }
+
+        .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4">
+        Destinasi Wisata Sibolga & Pulau Mursala
+    </h1>
+
+    <div class="text-center mb-5">
+        <a href="file:///C:/KULIAH/Web%20Desain/TtugasUas.html" class="btn btn-success btn-lg">
+            ← Kembali ke Menu Utama
+        </a>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4">Snorkeling Sibolga & Pulau Mursala</h1>
+            <p class="lead">
+                Jelajahi keindahan bawah laut dan wisata alam terbaik di Sumatera Utara
+            </p>
+        </div>
+    </section>
+
+    <!-- Destinasi -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Destinasi Wisata</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef"
+                        class="card-img-top" alt="Pulau Mursala">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Pulau Mursala</h4>
+                        <p class="card-text">
+                            Pulau Mursala terkenal dengan air terjun yang langsung
+                            mengalir ke laut serta panorama alam yang memukau.
+                            Cocok untuk snorkeling dan fotografi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86"
+                        class="card-img-top" alt="Sibolga">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Perairan Sibolga</h4>
+                        <p class="card-text">
+                            Menawarkan air laut yang jernih, terumbu karang yang
+                            indah, dan berbagai jenis ikan tropis yang menarik
+                            untuk dijelajahi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Paket Wisata -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Paket Wisata</h2>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4>Basic</h4>
+                        <h3 class="text-primary">Rp250.000</h3>
+                        <p>Peralatan snorkeling dan pelampung.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4>Premium</h4>
+                        <h3 class="text-success">Rp500.000</h3>
+                        <p>Peralatan, makan siang, dan dokumentasi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4>VIP</h4>
+                        <h3 class="text-danger">Rp750.000</h3>
+                        <p>Fasilitas lengkap dan transportasi speedboat.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Form Pemesanan -->
+    <section class="container mb-5">
+
+        <div class="card shadow">
+            <div class="card-body p-4">
+
+                <h2 class="text-center mb-4">Form Pemesanan</h2>
+
+                <form id="formPemesanan">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nomor Telepon</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Pilih Destinasi</label>
+                        <select class="form-select" required>
+                            <option value="">-- Pilih Destinasi --</option>
+                            <option>Pulau Mursala</option>
+                            <option>Perairan Sibolga</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Pilih Paket</label>
+                        <select class="form-select" required>
+                            <option value="">-- Pilih Paket --</option>
+                            <option>Basic - Rp250.000</option>
+                            <option>Premium - Rp500.000</option>
+                            <option>VIP - Rp750.000</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Jumlah Peserta</label>
+                        <input type="number" min="1" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tanggal Keberangkatan</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Pesan Sekarang
+                    </button>
+
+                </form>
+
+                <div id="alertSukses"
+                    class="alert alert-success mt-4 d-none">
+                    <strong>Berhasil!</strong>
+                    Pemesanan wisata snorkeling telah diterima.
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-0">
+            © 2026 Wisata Snorkeling Sibolga & Pulau Mursala
+        </p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("formPemesanan");
+        const alertSukses = document.getElementById("alertSukses");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            alertSukses.classList.remove("d-none");
+            form.reset();
+        });
+    </script>
+
+</body>
+
+</html>
